@@ -28,7 +28,7 @@ class Herbivore(Animal):
 
 class Carnivore(Animal):
     def bite(self, herbivore):
-        if isinstance(herbivore, Carnivore):
+        if isinstance(herbivore, Herbivore):
             return "Carnivore cannot bite another carnivor"
         elif herbivore.hidden:
             return "Carnivore cannot bite hidden herbivore"
